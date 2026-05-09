@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class Ejercicio3 {
     public static void main(String[] args) {
 
-        int n = Utilitarios.capturarEnteros( "Ingresar el número de registros");
+        int n = Utilitarios.capturarEnteros( "Ingresar el número de registros: ");
         String[] nombres = new String[n];
         int[] codigos = new int[n];
         int pos = 0, cempleado =0;

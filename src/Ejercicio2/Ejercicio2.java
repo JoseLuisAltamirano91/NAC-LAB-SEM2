@@ -15,7 +15,7 @@ public class Ejercicio2 {
         Servicio.imprimirArreglo(aleatorio,"\nArreglo aleatorio");
 
         //BUSCAR NUMERO
-        int num = Utilitarios.capturarEnteros("Ingrese el número a buscar");
+        int num = Utilitarios.capturarEnteros("Ingrese el número a buscar: ");
         Servicio.buscarNumeroArreglo(aleatorio, num);
 
         //CREAR SEGUNDO VECTOR CON ELEMENTOS DE INDICE IMPAR
