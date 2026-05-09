@@ -10,11 +10,11 @@ public class Servicio {
         Utilitarios.mostrarMensaje("\nRegistro de notas");
         for (int i = 0; i < notas.length; i++) {
             Utilitarios.mostrarMensaje("\nEstudiante: " + (i + 1));
-            cestudiantes[i] = Utilitarios.capturarEnteros("Codigo:");
+            cestudiantes[i] = Utilitarios.capturarEnteros("Codigo: ");
             for (int j = 0; j < notas[i].length; j++) {
                 double nota = Utilitarios.capturarDouble("Nota materia " + (j + 1) + ": ");
                 if (nota > 10) {
-                    Utilitarios.mostrarMensaje("Valor ingresado no valido:" + nota);
+                    Utilitarios.mostrarMensaje("Valor ingresado no valido: " + nota);
                     j--;
                 } else {
                     notas[i][j] = nota;
@@ -26,7 +26,7 @@ public class Servicio {
     public static double[] calcularPromedioEstudiantes(double[][] notas, int[] cestudiantes) {
         double mayorpromedio =0;
         int cestudiantemayorpromedio =0;
-        Utilitarios.mostrarMensaje("\nPromedio por estudiante:");
+        Utilitarios.mostrarMensaje("\nPromedio por estudiante: ");
         for (int i = 0; i < notas.length; i++) {
             double suma = 0;
             for (int j = 0; j < notas[i].length; j++) {
@@ -45,7 +45,7 @@ public class Servicio {
     }
 
     static void calcularPromedioMaterias(double[][] notas) {
-        Utilitarios.mostrarMensaje("\nPromedio por materia:");
+        Utilitarios.mostrarMensaje("\nPromedio por materia: ");
         for (int i = 0; i < notas[0].length; i++) {
             double suma = 0;
             for (int j = 0; j < notas.length; j++) {
@@ -58,13 +58,13 @@ public class Servicio {
     }
 
     public static void mostrarEstudianteMejorPromedio(double[] promedioestudiante) {
-        Utilitarios.mostrarMensaje("\nEstudiante con mayor promedio:");
+        Utilitarios.mostrarMensaje("\nEstudiante con mayor promedio: ");
         Utilitarios.mostrarMensaje("Estudiante: "+ ((int) promedioestudiante[1]));
         Utilitarios.mostrarMensaje("Promedio: "+ (promedioestudiante[0]));
     }
 
     public static void mostrarEstudiantesAprobadosPorMateria(double[][] notas) {
-        Utilitarios.mostrarMensaje("\nNumero de estudiantes aprobados por materia:");
+        Utilitarios.mostrarMensaje("\nNumero de estudiantes aprobados por materia: ");
         for (int i = 0; i < notas[0].length; i++) {
             int aprobados = 0;
             for (int j = 0; j < notas.length; j++) {
@@ -77,7 +77,7 @@ public class Servicio {
     }
 
     public static void mostrarEstudiantesReprobadosPorMateria(double[][] notas) {
-        Utilitarios.mostrarMensaje("\nNumero de estudiantes reprobados por materia:");
+        Utilitarios.mostrarMensaje("\nNumero de estudiantes reprobados por materia: ");
         for (int i = 0; i < notas[0].length; i++) {
             int reprobados = 0;
             for (int j = 0; j < notas.length; j++) {

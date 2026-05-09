@@ -13,10 +13,10 @@ public class Ejercicio4 {
         int[][] matrizB = Servicio.crearMatricesAleatorios(n, m);
         int[][] resultado = null;
 
-        Utilitarios.mostrarMensaje("\nMatriz A:");
+        Utilitarios.mostrarMensaje("\nMatriz A: ");
         Servicio.mostarMatriz(matrizA);
 
-        Utilitarios.mostrarMensaje("\nMatriz B:");
+        Utilitarios.mostrarMensaje("\nMatriz B: ");
         Servicio.mostarMatriz(matrizB);
 
         Servicio.mostrarMenu();
@@ -43,7 +43,7 @@ public class Ejercicio4 {
         }
 
         if(resultado != null){
-            Utilitarios.mostrarMensaje("\nResultado:");
+            Utilitarios.mostrarMensaje("\nResultado: ");
             Servicio.mostarMatriz(resultado);
         }
     }

@@ -9,7 +9,7 @@ public class Servicio {
     public static void ingresarDatosArreglo(String[] arreglo, String mensaje){
         Utilitarios.mostrarMensaje(mensaje);
         for(int i=0;i<arreglo.length;i++){
-            arreglo[i] =Utilitarios.capturarString("Ingrese cédula del estudiante "+(i+1)+":");
+            arreglo[i] =Utilitarios.capturarString("Ingrese cédula del estudiante "+(i+1)+": ");
         }
         Utilitarios.mostrarMensaje("");
     }

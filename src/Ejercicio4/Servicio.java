@@ -28,7 +28,7 @@ public class Servicio {
     }
 
     public static void mostrarMenu() {
-        Utilitarios.mostrarMensaje("\nSeleccione operación:");
+        Utilitarios.mostrarMensaje("\nSeleccione operación: ");
         Utilitarios.mostrarMensaje("1. Sumar");
         Utilitarios.mostrarMensaje("2. Restar");
         Utilitarios.mostrarMensaje("3. Multiplicar");

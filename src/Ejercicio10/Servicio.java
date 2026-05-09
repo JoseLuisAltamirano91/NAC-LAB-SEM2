@@ -25,7 +25,7 @@ public class Servicio {
     }
 
     public static void mostrarReporte(double[][] matriz, String[] clientes, String[] platos) {
-        Utilitarios.mostrarMensaje("\nB) Y C) Reporte de pedidos:");
+        Utilitarios.mostrarMensaje("\nB) Y C) Reporte de pedidos: ");
         Utilitarios.mostrarMensaje("cliente\tplato\tsubtotal\tdescuento\ttotal");
         for (int i = 0; i < matriz.length; i++) {
             double subtotal = matriz[i][0] * matriz[i][1];

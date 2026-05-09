@@ -9,9 +9,9 @@ public class Servicio {
 
     public static void ingresarDatosEmpleadoCodigo(int[] codigo, String[] nombres, int nregistros){
         for (int i = 0; i < nregistros; i++) {
-            Utilitarios.mostrarMensaje("\nIngrese los datos del empleado "+(i+1)+":");
-            codigo[i] = Utilitarios.capturarEnteros("Código :");
-            nombres[i] = Utilitarios.capturarString("Nómbre :");
+            Utilitarios.mostrarMensaje("\nIngrese los datos del empleado "+(i+1)+": ");
+            codigo[i] = Utilitarios.capturarEnteros("Código : ");
+            nombres[i] = Utilitarios.capturarString("Nómbre : ");
         }
     }
 

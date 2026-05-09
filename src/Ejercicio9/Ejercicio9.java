@@ -10,7 +10,7 @@ public class Ejercicio9 {
         int m=3;
         int n=0;
 
-        n= Utilitarios.capturarEnteros("Ingrese el numero de medicamentos:");
+        n= Utilitarios.capturarEnteros("Ingrese el numero de medicamentos: ");
 
         medicamentos= new double[n][m];
         nombres= new  String[n];

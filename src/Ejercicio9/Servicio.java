@@ -39,7 +39,7 @@ public class Servicio {
         double venta = 0;
         Utilitarios.mostrarMensaje("\nVenta de medicamentos: ");
         mostrarProductos(arreglo);
-        posicion = Utilitarios.capturarEnteros("Ingrese el numero de producto:") -1;
+        posicion = Utilitarios.capturarEnteros("Ingrese el numero de producto: ") -1;
         venta = Utilitarios.capturarDouble("Ingrese la cantidad vendida: ");
 
         matriz[posicion][0] -= venta;
