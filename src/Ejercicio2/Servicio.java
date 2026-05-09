@@ -57,7 +57,7 @@ public class Servicio {
                 contador++;
             }
         }
-        Utilitarios.mostrarMensaje("\nCantidad mayores a 20: "+ contador);
+        Utilitarios.mostrarMensaje("C) Cantidad mayores a 20: "+ contador);
     }
 
 }

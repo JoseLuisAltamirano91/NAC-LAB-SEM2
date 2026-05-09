@@ -15,14 +15,14 @@ public class Ejercicio2 {
         Servicio.imprimirArreglo(aleatorio,"\nArreglo aleatorio");
 
         //BUSCAR NUMERO
-        int num = Utilitarios.capturarEnteros("Ingrese el número a buscar: ");
+        int num = Utilitarios.capturarEnteros("A) Ingrese el número a buscar: ");
         Servicio.buscarNumeroArreglo(aleatorio, num);
 
         //CREAR SEGUNDO VECTOR CON ELEMENTOS DE INDICE IMPAR
         Servicio.crearArregloIndiceImpar(aleatorio, arregloImpares);
 
         //IMPRIME EL NUEVO ARREGLO
-        Servicio.imprimirArreglo(arregloImpares,"\nArreglo indices impares");
+        Servicio.imprimirArreglo(arregloImpares,"B) Arreglo indices impares");
 
         //CONTAR NUMEROS MAYORES A 20
         Servicio.contarElementosMayoresA20(arregloImpares);
